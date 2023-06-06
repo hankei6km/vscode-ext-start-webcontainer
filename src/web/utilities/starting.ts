@@ -11,7 +11,7 @@ export function starting() {
   window.withProgress(
     {
       location: ProgressLocation.Notification,
-      title: 'Start web container',
+      title: 'Start WebContainer',
       cancellable: false
     },
     (progress, token) => {

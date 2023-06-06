@@ -1,4 +1,4 @@
-# vscode-ext-start-web-container
+# vscode-ext-start-webcontainer
 
 https://codesandbox.io/p/sandbox/vscode-web-ext-vite-in-webview-ixe7rw
 

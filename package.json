@@ -1,13 +1,13 @@
 {
-  "name": "vscode-ext-start-web-container",
-  "displayName": "start-web-container",
+  "name": "vscode-ext-start-webcontainer",
+  "displayName": "Start WebContainer",
   "description": "",
   "version": "0.0.1",
   "author": "hankei6km <hankei6km@gmail.com> (https://github.com/hankei6km)",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git://github.com/hankei6km/vscode-ext-start-web-container.git"
+    "url": "git://github.com/hankei6km/vscode-ext-start-webcontainer.git"
   },
   "engines": {
     "vscode": "^1.75.0"
@@ -17,16 +17,16 @@
   "contributes": {
     "commands": [
       {
-        "command": "start-web-container.startWebContainer",
-        "title": "Start Web Container: Start"
+        "command": "start-webcontainer.startWebContainer",
+        "title": "Start WebContainer: Start"
       },
       {
-        "command": "start-web-container.openWebContainerPreview",
-        "title": "Start Web Container: Preview"
+        "command": "start-webcontainer.openWebContainerPreview",
+        "title": "Start WebContainer: Preview"
       },
       {
-        "command": "start-web-container.pickAllFiles",
-        "title": "Start Web Container: Pick up all files from a contaainer"
+        "command": "start-webcontainer.pickAllFiles",
+        "title": "Start WebContainer: Pick up all files from a contaainer"
       }
     ]
   },

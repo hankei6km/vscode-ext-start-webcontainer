@@ -6,7 +6,7 @@ export function activate(context: ExtensionContext) {
   const previewUrls = new PreviewUrls()
 
   const startWebContainer = commands.registerCommand(
-    'start-web-container.startWebContainer',
+    'start-webcontainer.startWebContainer',
     () => {
       ServerPanel.render(context.extensionUri, previewUrls)
     }
@@ -14,7 +14,7 @@ export function activate(context: ExtensionContext) {
   context.subscriptions.push(startWebContainer)
 
   const openWebContainerPreview = commands.registerCommand(
-    'start-web-container.openWebContainerPreview',
+    'start-webcontainer.openWebContainerPreview',
     async () => {
       let i = 0
       const result = await window.showQuickPick(previewUrls.getUrls(), {
@@ -31,7 +31,7 @@ export function activate(context: ExtensionContext) {
   context.subscriptions.push(openWebContainerPreview)
 
   const pickAllFiles = commands.registerCommand(
-    'start-web-container.pickAllFiles',
+    'start-webcontainer.pickAllFiles',
     async () => {
       ServerPanel.currentPanel?.pickAllFiles()
     }
