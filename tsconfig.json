@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "module": "ESNext",
+    "target": "es6",
+    "outDir": "out",
+    "lib": ["es6", "dom"],
+    "sourceMap": true,
+    "rootDir": "src",
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "strict": true
+  },
+  "exclude": [
+    "node_modules",
+    ".vscode-test",
+    ".vscode-test-web",
+    "webview-ui",
+    "server"
+  ]
+}
