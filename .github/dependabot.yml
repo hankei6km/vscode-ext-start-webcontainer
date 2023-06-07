@@ -19,6 +19,11 @@ updates:
     directory: '/server'
     schedule:
       interval: 'weekly'
+    ignore:
+      - dependency-name: 'esbuild-wasm'
+      - dependency-name: 'vite'
+        update-types:
+          ['version-update:semver-major', 'version-update:semver-minor']
 
   - package-ecosystem: 'github-actions'
     directory: '/'
