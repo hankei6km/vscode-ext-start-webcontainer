@@ -28,7 +28,7 @@
     "@types/react-dom": "^18.2.4",
     "@types/vscode-webview": "^1.57.0",
     "@vitejs/plugin-react": "^4.0.0",
-    "@vitest/coverage-c8": "^0.31.4",
+    "@vitest/coverage-c8": "^0.32.0",
     "chanpuru": "^0.2.2",
     "jsdom": "^22.0.0",
     "typescript": "^5.1.3",
