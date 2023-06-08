@@ -2,7 +2,7 @@
   "name": "vscode-ext-start-webcontainer",
   "displayName": "Start WebContainer",
   "description": "Start WebContainer, and use Jsh and Preview URL.",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "author": "hankei6km <hankei6km@gmail.com> (https://github.com/hankei6km)",
   "license": "MIT",
   "publisher": "hankei6km",
