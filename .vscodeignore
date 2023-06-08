@@ -43,3 +43,5 @@ vsc-extension-quickstart.md
 .codesandbox/**
 .prettierrc
 .prettierignore
+images/**
+!images/icon.png
