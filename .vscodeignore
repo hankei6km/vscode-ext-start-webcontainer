@@ -45,3 +45,4 @@ vsc-extension-quickstart.md
 .prettierignore
 images/**
 !images/icon.png
+scripts/**
