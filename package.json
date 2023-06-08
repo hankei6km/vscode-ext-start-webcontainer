@@ -47,7 +47,7 @@
     "ci:all": "npm ci && cd webview-ui && npm ci && cd ../server && npm ci",
     "start:webview": "cd webview-ui && npm run start",
     "build:webview": "cd webview-ui && npm run build",
-    "vscode:prepublish": "npm run build:all",
+    "vscode:prepublish": "npm run build:all && bash scripts/gen-changelog.sh",
     "compile": "rollup --config",
     "build": "rollup --config",
     "build:all": "rollup --config && npm run build:webview",
