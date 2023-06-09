@@ -38,7 +38,7 @@
       },
       {
         "command": "start-webcontainer.pickAllFiles",
-        "title": "Start WebContainer: Pick up all files from a contaainer"
+        "title": "Start WebContainer: Pick up all files from a container"
       }
     ]
   },
