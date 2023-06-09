@@ -4,7 +4,7 @@ Start [WebContainer](https://webcontainers.io/), and use Jsh and Preview URL.
 
 This extension dynamically generates an external tab with Cross Origin isolation enabled using [Nodebox](https://sandpack.codesandbox.io/docs/advanced-usage/nodebox)(the `Server` tab in the figure below). Therefore, the [`?vscode-coi=on`](https://github.com/microsoft/vscode/issues/137884) parameter is not required in VS Code for the Web.
 
-![Screenshot of Vite server running in Jsh terminal and previewing the page](images/screenshot.png)
+![Screenshot of Vite server running in Jsh terminal and previewing the page](https://raw.githubusercontent.com/hankei6km/vscode-ext-start-webcontainer/main/images/screenshot.png)
 
 > ⚠️ VS Code Insiders
 >
