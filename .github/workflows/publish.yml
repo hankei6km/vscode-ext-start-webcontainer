@@ -1,0 +1,51 @@
+on:
+  release:
+    types:
+      - published
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    environment: vscode_marketplace
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Use Node.js 16.x
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16.x
+
+      # https://docs.github.com/ja/free-pro-team@latest/actions/guides/caching-dependencies-to-speed-up-workflows
+      - name: Cache node modules
+        uses: actions/cache@v3
+        env:
+          cache-name: cache-node-modules
+        with:
+          # npm キャッシュファイルは Linux/macOS の「~/.npm」に保存される
+          path: ~/.npm
+          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-build-${{ env.cache-name }}-
+            ${{ runner.os }}-build-
+
+      - name: Install modules
+        run: npm run ci:all
+
+      - name: Run tests
+        run: |
+          npm run lint:type-check-all
+          npm run test:run-all
+
+      # 今回は target を web に固定。
+      - name: Package
+        run: |
+          echo vsce package --target web "${PRE_RELEASE_FLAG}"
+        env:
+          PRE_RELEASE_FLAG: ${{ github.event.release.prerelease ==  true && '--pre-release' || '' }}
+
+      - name: Publish
+        run: |
+          echo vsce publish --target web "${PRE_RELEASE_FLAG}"
+        env:
+          PRE_RELEASE_FLAG: ${{ github.event.release.prerelease ==  true && '--pre-release' || '' }}
+          VSCE_PAT: ${{ secrets.VSCE_PAT }}
