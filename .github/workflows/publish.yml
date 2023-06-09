@@ -41,7 +41,7 @@ jobs:
       # 今回は target を web に固定。
       - name: Package
         run: |
-          echo vsce package --target web "${PRE_RELEASE_FLAG}"
+          npx vsce package --target web "${PRE_RELEASE_FLAG}"
           cat CHANGELOG.md
         env:
           PRE_RELEASE_FLAG: ${{ github.event.release.prerelease ==  true && '--pre-release' || '' }}
@@ -49,7 +49,7 @@ jobs:
 
       - name: Publish
         run: |
-          echo vsce publish --target web "${PRE_RELEASE_FLAG}"
+          npx vsce publish --target web "${PRE_RELEASE_FLAG}"
         env:
           PRE_RELEASE_FLAG: ${{ github.event.release.prerelease ==  true && '--pre-release' || '' }}
           VSCE_PAT: ${{ secrets.VSCE_PAT }}
