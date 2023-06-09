@@ -1,6 +1,5 @@
 name: publish
 on:
-  workflow_dispatch:
   release:
     types:
       - published
@@ -42,7 +41,6 @@ jobs:
       - name: Package
         run: |
           npx vsce package --target web "${PRE_RELEASE_FLAG}"
-          cat CHANGELOG.md
         env:
           PRE_RELEASE_FLAG: ${{ github.event.release.prerelease ==  true && '--pre-release' || '' }}
           GH_TOKEN: ${{ github.token }}
