@@ -1,5 +1,5 @@
+name: publish
 on:
-  workflow_dispatch:
   release:
     types:
       - published
@@ -40,14 +40,14 @@ jobs:
       # 今回は target を web に固定。
       - name: Package
         run: |
-          echo vsce package --target web "${PRE_RELEASE_FLAG}"
-          cat CHANGELOG.md
+          npx vsce package --target web "${PRE_RELEASE_FLAG}"
         env:
           PRE_RELEASE_FLAG: ${{ github.event.release.prerelease ==  true && '--pre-release' || '' }}
+          GH_TOKEN: ${{ github.token }}
 
       - name: Publish
         run: |
-          echo vsce publish --target web "${PRE_RELEASE_FLAG}"
+          npx vsce publish --target web "${PRE_RELEASE_FLAG}"
         env:
           PRE_RELEASE_FLAG: ${{ github.event.release.prerelease ==  true && '--pre-release' || '' }}
           VSCE_PAT: ${{ secrets.VSCE_PAT }}
