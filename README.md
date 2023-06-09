@@ -35,7 +35,7 @@ When you edit files in the editor, they will be automatically reflected in WebCo
 > 📘 `npm install`:
 >
 > - `npm install` is not executed automatically. Please execute it manually
-> - Even if `package.json` and` package-lock.json` are updated, they will not be automatically reflected in the Workspace(See `Start WebContainer: Pick up all files from a contaainer` below)
+> - Even if `package.json` and` package-lock.json` are updated, they will not be automatically reflected in the Workspace(See `Start WebContainer: Pick up all files from a container` below)
 
 ### Open Preview URL
 
@@ -45,5 +45,5 @@ When you edit files in the editor, they will be automatically reflected in WebCo
 
 ### Pick up all files from a WebContainer
 
-1. Execute the `Start WebContainer: Pick up all files from a contaainer` command from the command palette
+1. Execute the `Start WebContainer: Pick up all files from a container` command from the command palette
 2. The files in the WebContainer will be overwritten to the Workspace
