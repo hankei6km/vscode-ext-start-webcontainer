@@ -6,6 +6,16 @@ This extension dynamically generates an external tab with Cross Origin isolation
 
 ![Screenshot of Vite server running in Jsh terminal and previewing the page](images/screenshot.png)
 
+> ⚠️ VS Code Insiders
+>
+> VS Code insides for the Web has Cross Origin isolation turned on by default.
+>
+> https://code.visualstudio.com/blogs/2023/06/05/vscode-wasm-wasi#_vs-codes-wasi-implementation
+>
+> > The only difficulty with this approach is that `SharedArrayBuffer` and `Atomics` require the site to be [cross-origin isolated](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/SharedArrayBuffer#security_requirements), which, because CORS is very viral, can be an endeavor by itself. This is why it is currently only enabled by default on the Insiders version [insiders.vscode.dev](https://insiders.vscode.dev/) and must be enabled using the query parameter `?vscode-coi=on` on [vscode.dev](https://vscode.dev/).
+>
+> If you use Start WebContainer, you have to set `?vscode-coi=off`.
+
 ## Features
 
 - Start WebContainer from VS Code for the Web
