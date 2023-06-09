@@ -40,6 +40,7 @@ jobs:
       - name: Package
         run: |
           echo vsce package --target web "${PRE_RELEASE_FLAG}"
+          cat CHANGELOG.md
         env:
           PRE_RELEASE_FLAG: ${{ github.event.release.prerelease ==  true && '--pre-release' || '' }}
 
