@@ -51,3 +51,4 @@ jobs:
         env:
           PRE_RELEASE_FLAG: ${{ github.event.release.prerelease ==  true && '--pre-release' || '' }}
           VSCE_PAT: ${{ secrets.VSCE_PAT }}
+          GH_TOKEN: ${{ github.token }}
