@@ -45,6 +45,7 @@ jobs:
           cat CHANGELOG.md
         env:
           PRE_RELEASE_FLAG: ${{ github.event.release.prerelease ==  true && '--pre-release' || '' }}
+          GH_TOKEN: ${{ github.token }}
 
       - name: Publish
         run: |
