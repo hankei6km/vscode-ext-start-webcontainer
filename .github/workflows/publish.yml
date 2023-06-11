@@ -38,17 +38,20 @@ jobs:
           npm run test:run-all
 
       # 今回は target を web に固定。
-      - name: Package
+      - name: Publish pre-release
+        if: github.event.release.prerelease == true
         run: |
-          npx vsce package --target web "${PRE_RELEASE_FLAG}"
+          npx vsce package --target web --pre-release
+          npx vsce publish --target web --pre-release
         env:
-          PRE_RELEASE_FLAG: ${{ github.event.release.prerelease ==  true && '--pre-release' || '' }}
+          VSCE_PAT: ${{ secrets.VSCE_PAT }}
           GH_TOKEN: ${{ github.token }}
 
       - name: Publish
+        if: github.event.release.prerelease != true
         run: |
-          npx vsce publish --target web "${PRE_RELEASE_FLAG}"
+          npx vsce package --target web
+          npx vsce publish --target web
         env:
-          PRE_RELEASE_FLAG: ${{ github.event.release.prerelease ==  true && '--pre-release' || '' }}
           VSCE_PAT: ${{ secrets.VSCE_PAT }}
           GH_TOKEN: ${{ github.token }}
