@@ -19,7 +19,7 @@
     "happy-dom": "^12.1.2",
     "typescript": "^5.2.2",
     "vite": "4.1.5",
-    "vitest": "^0.34.4"
+    "vitest": "^0.34.5"
   },
   "dependencies": {
     "@webcontainer/api": "^1.1.5",
