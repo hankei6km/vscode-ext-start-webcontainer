@@ -13,7 +13,7 @@
     "lint:type-check": "tsc --noEmit"
   },
   "devDependencies": {
-    "@types/ws": "^8.5.5",
+    "@types/ws": "^8.5.6",
     "@vitest/coverage-v8": "^0.34.4",
     "esbuild-wasm": "0.17.12",
     "happy-dom": "^12.1.2",
@@ -25,6 +25,6 @@
     "@webcontainer/api": "^1.1.5",
     "chanpuru": "^0.2.2",
     "minimatch": "^9.0.3",
-    "ws": "^8.14.1"
+    "ws": "^8.14.2"
   }
 }
