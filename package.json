@@ -74,7 +74,7 @@
     "rollup": "^3.29.3",
     "typescript": "^5.2.2",
     "vite": "^4.4.9",
-    "vitest": "^0.34.4",
+    "vitest": "^0.34.5",
     "vscode-test": "^1.5.0"
   },
   "dependencies": {
