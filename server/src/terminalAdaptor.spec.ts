@@ -7,26 +7,32 @@ describe('TerminalAdaptor', () => {
       send: vi.fn(),
       addEventListener: vi.fn()
     }
-    const shellProcess = {
-      output: {
-        pipeTo: vi.fn().mockImplementation((writable) => {
-          writable.write('test-1')
-        })
-      },
-      input: {
-        getWriter: vi.fn()
-      },
-      resize: vi.fn()
-    }
-    const terminalAdaptor = new TerminalAdaptor(ws as any, shellProcess as any)
-    terminalAdaptor.handle()
-    const m = ws.send.mock.calls[0][0]
+    await new Promise<void>((resolve) => {
+      const shellProcess = {
+        output: {
+          pipeTo: vi.fn().mockImplementation(async (writable) => {
+            await writable.getWriter().write('test-1')
+            resolve()
+          })
+        },
+        input: {
+          getWriter: vi.fn()
+        },
+        resize: vi.fn()
+      }
+      const terminalAdaptor = new TerminalAdaptor(
+        ws as any,
+        shellProcess as any
+      )
+      terminalAdaptor.handle()
+    })
+    const m = ws.send.mock.calls[1][0]
     expect(JSON.parse(m)).toEqual({
       type: 'message:term',
       id: '',
       payload: {
         command: 'out',
-        data: { type: 'Buffer', data: [116, 101, 115, 116, 45, 49] }
+        data: 'test-1'
       }
     })
   })
