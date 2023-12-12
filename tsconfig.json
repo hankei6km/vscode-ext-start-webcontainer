@@ -6,7 +6,7 @@
     "lib": ["es6", "dom"],
     "sourceMap": true,
     "rootDir": "src",
-    "moduleResolution": "node",
+    "moduleResolution": "Bundler",
     "allowSyntheticDefaultImports": true,
     "strict": true
   },
