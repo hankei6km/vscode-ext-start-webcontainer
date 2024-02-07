@@ -26,7 +26,7 @@
     "@testing-library/react": "^14.2.1",
     "@types/react": "^18.2.48",
     "@types/react-dom": "^18.2.18",
-    "@types/vscode-webview": "^1.57.4",
+    "@types/vscode-webview": "^1.57.5",
     "@vitejs/plugin-react": "^4.2.1",
     "@vitest/coverage-v8": "^1.2.2",
     "chanpuru": "^0.2.2",
