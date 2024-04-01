@@ -65,7 +65,7 @@
     "@rollup/plugin-commonjs": "^25.0.7",
     "@rollup/plugin-node-resolve": "^15.2.3",
     "@rollup/plugin-typescript": "^11.1.6",
-    "@types/node": "^20.11.29",
+    "@types/node": "^20.12.2",
     "@types/vscode": "^1.87.0",
     "@vitest/coverage-v8": "^1.4.0",
     "@vscode/test-web": "^0.0.52",
