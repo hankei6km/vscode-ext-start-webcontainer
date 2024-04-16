@@ -67,7 +67,7 @@
     "@rollup/plugin-typescript": "^11.1.6",
     "@types/node": "^20.12.6",
     "@types/vscode": "^1.87.0",
-    "@vitest/coverage-v8": "^1.4.0",
+    "@vitest/coverage-v8": "^1.5.0",
     "@vscode/test-web": "^0.0.53",
     "@vscode/vsce": "^2.24.0",
     "prettier": "^3.2.5",
