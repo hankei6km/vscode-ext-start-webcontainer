@@ -31,7 +31,7 @@
     "@vitest/coverage-v8": "^1.5.0",
     "chanpuru": "^0.2.2",
     "jsdom": "^24.0.0",
-    "typescript": "^5.4.4",
+    "typescript": "^5.4.5",
     "vite": "^5.2.8",
     "vitest": "^1.2.2"
   }
