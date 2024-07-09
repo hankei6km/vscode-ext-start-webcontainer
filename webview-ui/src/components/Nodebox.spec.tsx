@@ -6,9 +6,11 @@ import { Chan } from 'chanpuru'
 
 vi.mock('@codesandbox/nodebox', async () => {
   const Nodebox = vi.fn()
-  Nodebox.prototype.connect = vi.fn<[], void>().mockResolvedValue()
+  Nodebox.prototype.connect = vi
+    .fn<typeof Nodebox.prototype.connect>()
+    .mockResolvedValue(undefined)
   Nodebox.prototype.fs = {
-    init: vi.fn<[], void>().mockResolvedValue()
+    init: vi.fn<typeof Nodebox.prototype.fs>().mockResolvedValue(undefined)
   }
   Nodebox.prototype.shell = {
     create: vi.fn().mockReturnValue({
