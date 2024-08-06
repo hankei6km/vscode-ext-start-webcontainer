@@ -13,7 +13,7 @@
     "lint:type-check": "tsc --noEmit"
   },
   "devDependencies": {
-    "@types/ws": "^8.5.11",
+    "@types/ws": "^8.5.12",
     "@vitest/coverage-v8": "^2.0.4",
     "esbuild-wasm": "0.17.12",
     "happy-dom": "^14.12.3",
