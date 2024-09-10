@@ -69,7 +69,7 @@
     "@types/vscode": "^1.93.0",
     "@vitest/coverage-v8": "^2.0.5",
     "@vscode/test-web": "^0.0.59",
-    "@vscode/vsce": "^3.0.0",
+    "@vscode/vsce": "^3.1.0",
     "prettier": "^3.3.3",
     "rollup": "^4.21.2",
     "typescript": "^5.5.4",
