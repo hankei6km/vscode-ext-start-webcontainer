@@ -14,7 +14,7 @@
   },
   "devDependencies": {
     "@types/ws": "^8.5.13",
-    "@vitest/coverage-v8": "^2.1.5",
+    "@vitest/coverage-v8": "^2.1.8",
     "esbuild-wasm": "0.17.12",
     "happy-dom": "^15.11.7",
     "typescript": "^5.7.2",
