@@ -17,7 +17,7 @@
     "@vitest/coverage-v8": "^2.1.8",
     "esbuild-wasm": "0.17.12",
     "happy-dom": "^16.5.3",
-    "typescript": "^5.7.2",
+    "typescript": "^5.7.3",
     "vite": "4.5.5",
     "vitest": "^2.0.1"
   },
