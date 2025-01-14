@@ -30,7 +30,7 @@
     "@vitejs/plugin-react": "^4.3.4",
     "@vitest/coverage-v8": "^2.1.8",
     "chanpuru": "^0.2.2",
-    "jsdom": "^25.0.1",
+    "jsdom": "^26.0.0",
     "typescript": "^5.7.3",
     "vite": "^6.0.7",
     "vitest": "^2.0.1"
