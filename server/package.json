@@ -24,7 +24,7 @@
   "dependencies": {
     "@webcontainer/api": "^1.6.1",
     "chanpuru": "^0.2.2",
-    "minimatch": "^10.0.1",
+    "minimatch": "^10.0.3",
     "ws": "^8.18.2"
   }
 }
