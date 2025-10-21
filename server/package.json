@@ -18,7 +18,7 @@
     "esbuild-wasm": "0.17.12",
     "happy-dom": "^20.0.2",
     "typescript": "^5.9.3",
-    "vite": "^6.3.6",
+    "vite": "^6.3.7",
     "vitest": "^3.0.4"
   },
   "dependencies": {
