@@ -62,7 +62,7 @@
     "lint:type-check-all": "tsc --noEmit && cd webview-ui && npm run lint:type-check && cd ../server && npm run lint:type-check"
   },
   "devDependencies": {
-    "@rollup/plugin-commonjs": "^28.0.9",
+    "@rollup/plugin-commonjs": "^29.0.0",
     "@rollup/plugin-node-resolve": "^16.0.3",
     "@rollup/plugin-typescript": "^12.3.0",
     "@types/node": "^24.9.1",
