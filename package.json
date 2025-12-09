@@ -68,7 +68,7 @@
     "@types/node": "^24.10.1",
     "@types/vscode": "^1.106.1",
     "@vitest/coverage-v8": "^3.2.4",
-    "@vscode/test-web": "^0.0.76",
+    "@vscode/test-web": "^0.0.77",
     "@vscode/vsce": "^3.7.1",
     "prettier": "^3.7.4",
     "rollup": "^4.53.3",
