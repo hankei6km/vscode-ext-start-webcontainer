@@ -71,7 +71,7 @@
     "@vscode/test-web": "^0.0.77",
     "@vscode/vsce": "^3.7.1",
     "prettier": "^3.7.4",
-    "rollup": "^4.53.3",
+    "rollup": "^4.53.5",
     "typescript": "^5.9.3",
     "vite": "^7.3.0",
     "vitest": "^3.0.4",
