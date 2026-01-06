@@ -25,6 +25,6 @@
     "@webcontainer/api": "^1.6.1",
     "chanpuru": "^0.2.2",
     "minimatch": "^10.1.1",
-    "ws": "^8.18.3"
+    "ws": "^8.19.0"
   }
 }
