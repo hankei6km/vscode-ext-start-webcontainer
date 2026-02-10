@@ -79,6 +79,6 @@
   },
   "dependencies": {
     "chanpuru": "^0.2.2",
-    "minimatch": "^10.1.1"
+    "minimatch": "^10.1.2"
   }
 }
