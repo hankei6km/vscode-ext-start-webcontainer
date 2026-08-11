@@ -72,7 +72,7 @@
     "@vscode/vsce": "^3.9.2",
     "prettier": "^3.9.6",
     "rollup": "^4.62.4",
-    "typescript": "^6.0.3",
+    "typescript": "^7.0.2",
     "vite": "^8.2.1",
     "vitest": "^3.0.4",
     "vscode-test": "^1.5.0"
