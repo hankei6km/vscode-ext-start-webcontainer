@@ -73,7 +73,7 @@
     "prettier": "^3.9.10",
     "rollup": "^4.64.7",
     "typescript": "^6.0.3",
-    "vite": "^8.3.4",
+    "vite": "^8.3.5",
     "vitest": "^4.1.11",
     "vscode-test": "^1.5.0"
   },
